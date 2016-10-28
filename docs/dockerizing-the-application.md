@@ -89,6 +89,35 @@ Now that we built our image it's time to run a container based on that image:
 
 This started our container, so the Docker should have executed `dotnet run` (remember the last line in the `Dockerfile`) inside our container, so our application should have started. 
 
+The output of the `docker run` command is the id of the container, and we can verify (without starting the browser) if the container is running with the `docker ps` command:
+
+![](media/docker-ps.png)
+
 Notice the `-p 8080:5000` argument: this maps the port 5000 from the container to port 8080 in the host - this means that if we navigate to `http://localhost:8080`, the application should be running:
 
 ![](media/docker-run-browser.png)
+
+We see that the application is running properly. We can also attach to this running container and execute various commands. Let's attach to it and start a bash session:
+
+`docker exec -it <container-id> bash`
+
+![](media/docker-exec.png)
+
+We see that the container runs on top of a Linux kernel.
+
+> The parameters for `docker exec`, `-it` are as follows: `-i` - interactive, `-t` - output on the terminal.
+
+> For full reference on the `docker exec` command [visit the Official Documentation](https://docs.docker.com/engine/reference/commandline/exec/).
+
+Quick Recap
+-----------
+
+Here's what we did so far:
+
+- we created a very simple ASP .NET Core web application
+- installed Docker
+- added a `Dockerfile` that created a new image with our application (based on microsoft/dotnet)
+- ran a new container based on our newly created image
+- executed some bash commands inside our container
+
+[Next we will see how to connect our GitHub repository to Visual Studio Team Services](github-vsts.md)
