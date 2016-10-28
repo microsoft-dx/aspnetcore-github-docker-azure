@@ -23,3 +23,13 @@ There are several good reasons to consider Docker:
 - **Continuous Delivery**. Your Continous Integration and Continous Delivery solution - for instance [Visual Studio Team Services](https://www.visualstudio.com/team-services/), [Team Foundation Server](https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx) or [Jenkins](http://jenkins-ci.org/) - can be easily configured to use Docker containers to automatically build, deploy and test apps. So you can get a fully automated dev / test / production pipeline.
 - **Work together**. With [Docker Hub](https://hub.docker.com/) you can create and share your Docker images with other developers. Or you can stand up your private hub for your company to use.
 
+Get started with Docker
+-----------------------
+
+There are a lot of resource available to start learning Docker. Here are a few of them:
+
+- [The Official Docker Documentation](https://docs.docker.com/) - as always, the first place
+- [Great Pluralsight collection of courses by Nigel Poulton](https://www.pluralsight.com/paths/docker)
+
+How will we use Docker? - //TO DO
+-----------------------
