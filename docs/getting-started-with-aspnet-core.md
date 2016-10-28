@@ -63,3 +63,7 @@ Running the application with `dotnet run` and navigating to `http://localhost:50
 ![](media/chrome-run.png)
 
 This is starting point for the application we are going to use in order to get through the whole process: GitHub --> VSTS --> Docker Hub --> Docker Cloud --> Azure.
+
+At this point, this application only runs inside the .NET Core Framework that we installed on the machine. 
+
+[Next, we will run the same application inside Docker.](aspnetcore-docker.md)
