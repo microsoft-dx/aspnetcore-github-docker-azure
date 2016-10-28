@@ -61,3 +61,5 @@ using Microsoft.AspNetCore.Http;
 Running the application with `dotnet run` and navigating to `http://localhost:5000`, you should see an output similar to:
 
 ![](media/chrome-run.png)
+
+This is starting point for the application we are going to use in order to get through the whole process: GitHub --> VSTS --> Docker Hub --> Docker Cloud --> Azure.
