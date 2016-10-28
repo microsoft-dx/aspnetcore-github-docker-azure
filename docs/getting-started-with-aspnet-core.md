@@ -66,4 +66,4 @@ This is starting point for the application we are going to use in order to get t
 
 At this point, this application only runs inside the .NET Core Framework that we installed on the machine. 
 
-[Next, we will run the same application inside Docker.](aspnetcore-docker.md)
+[Next, we will run the same application inside Docker.](what-is-docker.md)
