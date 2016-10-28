@@ -5,8 +5,21 @@ What is Docker?
 
 > [More on the Official Docker Documentation.](https://docs.docker.com/)
 
-![](media/vm-container.png)
-
 Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries - anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
 
-Containers running on the same machine share the same OS kernel, so they start very fast and use the memory more efficiently.
+![](media/vm-container.png)
+
+Each **virtual machine** includes the application, the necessary binaries and libraries and an entire guest operating system - all of which may be tens of GBs in size.
+
+By contrast, **containers** include the application and all of its dependencies, but share the kernel with other containers. They run as an isolated process in userspace on the host operating system. They're also not tied to any specific infrastructure - Docker containers run on any computer, on any infrastructure and in **any cloud**.
+
+
+Why use Docker to build applications?
+-------------------------------------
+There are several good reasons to consider Docker:
+
+- **Consistent Environments**. By packaging up the application with its configs and dependencies together and shipping as a container, the application will always work as designed locally, on another machine, in test or production. No more worries about having to install the same configs into a different environment.
+- **Small Footprint**. As explained above, sharing a kernel and filesystem layering makes for very small containers.
+- **Continuous Delivery**. Your Continous Integration and Continous Delivery solution - for instance [Visual Studio Team Services](https://www.visualstudio.com/team-services/), [Team Foundation Server](https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx) or [Jenkins](http://jenkins-ci.org/) - can be easily configured to use Docker containers to automatically build, deploy and test apps. So you can get a fully automated dev / test / production pipeline.
+- **Work together**. With [Docker Hub](https://hub.docker.com/) you can create and share your Docker images with other developers. Or you can stand up your private hub for your company to use.
+
