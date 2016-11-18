@@ -11,7 +11,7 @@ public class Program
             .UseKestrel()
             .Configure(app => app.Run(context =>
             {
-                var response = $"Hello, Universe! It is {DateTime.Now} ";
+                var response = $"Hello, CodeCamp! It is {DateTime.Now} ";
                 return context.Response.WriteAsync(response);
             }))
             .Build();
